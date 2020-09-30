@@ -37,7 +37,8 @@ function myfun() {
   } else {
     document.getElementById("mylist").appendChild(li);
   }
-  document.getElementById("myinput").val = "";
+  console.log(document.getElementById("myinput").value);
+  document.getElementById("myinput").value = "";
   var span = document.createElement("span");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
